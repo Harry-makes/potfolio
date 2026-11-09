@@ -1,41 +1,30 @@
-# Thimira Theekshana — Personal Portfolio
+# Thimira Theekshana — GitHub Pages layout fix
 
-A responsive, dark-crimson portfolio built using plain HTML, CSS, and JavaScript. Ready for GitHub Pages.
+This version fixes the unstyled **Selected Film Work** grid on the live GitHub Pages website. The complete styling and functionality are included in `index.html` so it no longer depends on GitHub serving a matching `styles.css` or `script.js`.
 
-## Run locally
+## Update your existing site (harry-makes.github.io/potfolio/)
 
-Double-click `index.html` or run `python3 -m http.server 8000` in this folder and visit `http://localhost:8000`.
+1. Open https://github.com/harry-makes/potfolio
+2. Open `index.html`, click the pencil icon **Edit this file**, and replace its contents with those from this package's `index.html`. Alternatively use **Add file → Upload files** to replace the existing file and commit.
+3. If the `assets` directory is missing `filmmaking.webp` or `portrait.webp`, upload the two `assets` files into your existing repository's `assets/` folder. Do not upload the parent folder containing the files.
+4. Click **Commit changes**.
+5. When GitHub Pages finishes deploying, open https://harry-makes.github.io/potfolio/?v=2 or hard-refresh with Cmd+Shift+R (Mac) / Ctrl+Shift+R (Windows).
 
-## Publish to username.github.io
+You do **not** need to replace `styles.css` or `script.js`. They are no longer referenced by this version of the website. If they remain in GitHub, they won't interfere.
 
-1. Create a GitHub account, or sign in to your existing one.
-2. Create a **public** repository named exactly `<YOUR-GITHUB-USERNAME>.github.io` (replace the placeholder with your actual username).
-3. Upload **the contents of this folder**, not the ZIP file, to the **root** of the repository. You must have `index.html`, `styles.css`, `script.js`, `favicon.svg`, `.nojekyll`, and the `assets` folder at the repository root.
-4. On GitHub open **Settings → Pages**, select **Deploy from a branch**, choose **main** and **/(root)**, then Save.
-5. Visit `https://<YOUR-GITHUB-USERNAME>.github.io/`. Publishing can take up to about 10 minutes.
+## Contents
+- `index.html`: complete website including all layout CSS and JavaScript
+- `assets/filmmaking.webp`: hero image
+- `assets/portrait.webp`: About image
+- `favicon.svg`: website favicon
+- `.nojekyll`: standard static-site configuration file (may be hidden in Finder)
+- `reel_links.csv`: video/project links and spaces for confirmed client names
 
-## Before sharing publicly
+## Notes
+- The Work section contains 8 featured reels plus an archive of 23 unique provided links.
+- The six-photo gallery has been removed, as requested.
+- The brand/project thumbnail images are not included yet; add those once you provide reel covers.
+- Your contact info: theekshanat655@gmail.com | WhatsApp +94 75 530 0294 | Call +94 78 694 6774.
+- The reel preview uses Instagram/Facebook embeds that may be blocked by the platforms. Each reel still has a link to its original post.
+- To change colors, edit the `:root` CSS variables inside the `<style>` section of `index.html`.
 
-- Contact details are set to **theekshanat655@gmail.com**, **WhatsApp +94 75 530 0294**, and **mobile +94 78 694 6774**. Update `index.html` if these change.
-- The previous six-tile stills/BTS gallery was removed by request. The Work section now focuses exclusively on published video reels.
-- The hero uses a behind-the-scenes image, not video. Add your own showreel URL once ready.
-- The site includes **8 selected social reels with on-demand preview** and a toggle for all **23 unique reels** (11 Instagram and 12 Facebook). The duplicated Instagram URL from the original list was intentionally included once.
-- **Filming and editing credits** are shown throughout the video section, based on the portfolio owner's attribution.
-- **Brand/client names are not yet verified**: replace the generic labels in `index.html` and add approved brand names/logos only after confirming which client appears in each linked reel. Instagram/Facebook may block external embeds, so each reel has a working original-post link.
-- A `reel_links.csv` file lists every reel and provides a blank column for verified brand/client names.
-- The two remaining photos (on-set hero and personal portrait) each appear once. Only images currently used by the page are included under `assets/`.
-- Verify that you have rights to publicly publish the remaining imagery and any identifiable people depicted in it.
-
-## Update content
-
-`index.html`: names, descriptions, project titles and links.
-
-`styles.css`: colors (`--red`, `--bg`, `--fg`), typography and layout.
-
-`assets/`: images. Match the corresponding filenames referenced in `index.html`.
-
-No frameworks or build tools required.
-
-## Upcoming reel thumbnails
-
-Once you provide approved reel thumbnail images, place them in `assets/` and link them to the corresponding featured reel cards in `index.html`.
