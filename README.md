@@ -23,8 +23,20 @@ You do **not** need to replace `styles.css` or `script.js`. They are no longer r
 ## Notes
 - The Work section contains 8 featured reels plus an archive of 23 unique provided links.
 - The six-photo gallery has been removed, as requested.
-- The brand/project thumbnail images are not included yet; add those once you provide reel covers.
+- Eight real WebP reel cover thumbnails are included in `assets/reel-01.webp` through `assets/reel-08.webp`; each is used once in its corresponding featured card.
+- The reel archive uses individually numbered “Film & Edit” project titles instead of repetitive “Client production” labels.
 - Your contact info: theekshanat655@gmail.com | WhatsApp +94 75 530 0294 | Call +94 78 694 6774.
 - The reel preview uses Instagram/Facebook embeds that may be blocked by the platforms. Each reel still has a link to its original post.
 - To change colors, edit the `:root` CSS variables inside the `<style>` section of `index.html`.
 
+
+## Updating your current GitHub Pages project
+1. Open https://github.com/harry-makes/potfolio
+2. Upload the new `index.html` to the repository root and all eight `assets/reel-01.webp` through `assets/reel-08.webp` files into the `assets/` folder.
+3. Commit changes and view https://harry-makes.github.io/potfolio/?v=3 after deployment.
+4. `index.html` includes its own CSS and JavaScript; do not replace `styles.css` or `script.js`.
+
+
+## Cleaner reel cards
+- Removed the large centered play buttons and the “PLAY REEL” overlays from all 8 thumbnails.
+- Every cover is still fully clickable and opens the existing modal preview; the ↗ button beside each project opens the original Instagram/Facebook reel.

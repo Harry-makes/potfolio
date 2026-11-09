@@ -45,11 +45,7 @@
 .reel-count span{font:600 10px var(--font);color:#bfa3a8}
 .reel-vertical{writing-mode:vertical-rl;position:absolute;right:20px;top:23px;z-index:2;font-size:8px;letter-spacing:.23em;color:#d7b5bb}
 .reel-big-index{position:absolute;bottom:-53px;left:-5px;font:400 clamp(130px,17vw,240px)/1 var(--display);color:#e4374112;z-index:0;pointer-events:none}
-.reel-centre{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;z-index:2;white-space:nowrap}
-.reel-ring{width:76px;height:76px;border-radius:50%;border:1px solid #ff767e;display:grid;place-items:center;margin:0 auto 16px;padding-left:5px;font-size:20px;color:white;background:#d5273930;box-shadow:0 0 35px #ea27302a;transition:transform .25s,background .25s}
-.reel-watch-label{font-size:10px;font-weight:800;letter-spacing:.22em}
-.preview-reel{position:absolute;inset:0;width:100%;height:100%;cursor:pointer;z-index:3;border:0;background:transparent;color:transparent;font-size:0}
-.reel-poster:hover .reel-ring,.preview-reel:focus-visible~.reel-centre .reel-ring{transform:scale(1.11);background:#e43741a9}
+.preview-reel{position:absolute;inset:0;width:100%;height:100%;cursor:pointer;z-index:3;border:0;background:transparent;color:transparent;font-size:0;-webkit-tap-highlight-color:transparent}
 .reel-poster:has(.preview-reel:focus-visible){outline:2px solid #ff737d;outline-offset:3px}
 .reel-details{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:16px 0}
 .reel-platform{font-size:9px;letter-spacing:.1em;color:#e1717a;font-weight:800}
@@ -95,7 +91,7 @@
 body.modal-open{overflow:hidden}
 @media(max-width:1120px){.reel-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.film-intro h3{font-size:clamp(55px,7vw,85px)}.reel-big-index{font-size:185px}.nav{gap:16px}.nav a{font-size:9px}}
 @media(max-width:760px){.reel-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 12px}.film-intro{display:block;margin-top:30px}.film-intro>p{margin-top:18px}.reel-archive-grid{grid-template-columns:1fr}.collaborations-inner{grid-template-columns:1fr;gap:12px}.collaborations-section{padding:56px 0}.reel-poster{aspect-ratio:9/13}.reel-vertical{font-size:7px}.reel-count{top:18px;left:18px}.reel-archive-link{grid-template-columns:28px 74px 1fr 14px}.modal-foot{flex-wrap:wrap}.reel-frame{height:min(510px,62dvh)}}
-@media(max-width:430px){.film-intro h3{font-size:54px}.reel-ring{width:60px;height:60px;font-size:17px}.reel-watch-label{font-size:8px}.reel-poster{aspect-ratio:9/14}.reel-details h3{font-size:14px}.reel-details p{font-size:9px}.reel-platform{font-size:7px}.reel-external{width:28px;height:28px;font-size:17px}.reel-vertical{right:14px}.film-work{padding-bottom:55px}}
+@media(max-width:430px){.film-intro h3{font-size:54px}.reel-poster{aspect-ratio:9/14}.reel-details h3{font-size:14px}.reel-details p{font-size:9px}.reel-platform{font-size:7px}.reel-external{width:28px;height:28px;font-size:17px}.reel-vertical{right:14px}.film-work{padding-bottom:55px}}
 
 @media (min-width:761px) and (max-width:980px){.header{gap:16px;padding-inline:22px}.brand{font-size:12px}.nav{gap:12px}.nav a{font-size:8px}.talk{padding:11px;font-size:9px}.wrapper{width:calc(100% - 44px)}}
 
@@ -138,9 +134,9 @@ body.modal-open{overflow:hidden}
           <span class="reel-poster-overlay" aria-hidden="true"></span>
           <span class="reel-count">01 <span>/ 08</span></span>
           <span class="reel-vertical">THIMIRA THEEKSHANA / FILM &amp; EDIT</span>
-          <div class="reel-centre"><span class="reel-ring" aria-hidden="true">▶</span><span class="reel-watch-label">PLAY REEL</span></div>
+          
           <span class="reel-big-index" aria-hidden="true">01</span>
-          <button class="preview-reel" type="button" data-platform="instagram" data-url="https://www.instagram.com/reel/DYo-VtRKNKu/" aria-label="Preview Instagram reel 01">Preview reel 01</button>
+          <button class="preview-reel" type="button" data-platform="instagram" data-url="https://www.instagram.com/reel/DYo-VtRKNKu/" aria-label="Watch featured reel 01 on Instagram">Preview reel 01</button>
         </div>
         <div class="reel-details"><div><span class="reel-platform">INSTAGRAM / SELECTED CLIENT WORK</span><h3>Film &amp; Edit <span>— 01</span></h3><p>Filmed &amp; edited by Thimira Theekshana</p></div><a class="reel-external" href="https://www.instagram.com/reel/DYo-VtRKNKu/" target="_blank" rel="noopener noreferrer" aria-label="Open project 01 on Instagram">↗</a></div>
       </article><article class="reel-card reel-card--instagram" aria-label="Film and editing project 02 on Instagram">
@@ -149,9 +145,9 @@ body.modal-open{overflow:hidden}
           <span class="reel-poster-overlay" aria-hidden="true"></span>
           <span class="reel-count">02 <span>/ 08</span></span>
           <span class="reel-vertical">THIMIRA THEEKSHANA / FILM &amp; EDIT</span>
-          <div class="reel-centre"><span class="reel-ring" aria-hidden="true">▶</span><span class="reel-watch-label">PLAY REEL</span></div>
+          
           <span class="reel-big-index" aria-hidden="true">02</span>
-          <button class="preview-reel" type="button" data-platform="instagram" data-url="https://www.instagram.com/reel/DYW5LvBEdyj/" aria-label="Preview Instagram reel 02">Preview reel 02</button>
+          <button class="preview-reel" type="button" data-platform="instagram" data-url="https://www.instagram.com/reel/DYW5LvBEdyj/" aria-label="Watch featured reel 02 on Instagram">Preview reel 02</button>
         </div>
         <div class="reel-details"><div><span class="reel-platform">INSTAGRAM / SELECTED CLIENT WORK</span><h3>Film &amp; Edit <span>— 02</span></h3><p>Filmed &amp; edited by Thimira Theekshana</p></div><a class="reel-external" href="https://www.instagram.com/reel/DYW5LvBEdyj/" target="_blank" rel="noopener noreferrer" aria-label="Open project 02 on Instagram">↗</a></div>
       </article><article class="reel-card reel-card--instagram" aria-label="Film and editing project 03 on Instagram">
@@ -160,9 +156,9 @@ body.modal-open{overflow:hidden}
           <span class="reel-poster-overlay" aria-hidden="true"></span>
           <span class="reel-count">03 <span>/ 08</span></span>
           <span class="reel-vertical">THIMIRA THEEKSHANA / FILM &amp; EDIT</span>
-          <div class="reel-centre"><span class="reel-ring" aria-hidden="true">▶</span><span class="reel-watch-label">PLAY REEL</span></div>
+          
           <span class="reel-big-index" aria-hidden="true">03</span>
-          <button class="preview-reel" type="button" data-platform="instagram" data-url="https://www.instagram.com/reel/DXoswrKEr0-/" aria-label="Preview Instagram reel 03">Preview reel 03</button>
+          <button class="preview-reel" type="button" data-platform="instagram" data-url="https://www.instagram.com/reel/DXoswrKEr0-/" aria-label="Watch featured reel 03 on Instagram">Preview reel 03</button>
         </div>
         <div class="reel-details"><div><span class="reel-platform">INSTAGRAM / SELECTED CLIENT WORK</span><h3>Film &amp; Edit <span>— 03</span></h3><p>Filmed &amp; edited by Thimira Theekshana</p></div><a class="reel-external" href="https://www.instagram.com/reel/DXoswrKEr0-/" target="_blank" rel="noopener noreferrer" aria-label="Open project 03 on Instagram">↗</a></div>
       </article><article class="reel-card reel-card--instagram" aria-label="Film and editing project 04 on Instagram">
@@ -171,9 +167,9 @@ body.modal-open{overflow:hidden}
           <span class="reel-poster-overlay" aria-hidden="true"></span>
           <span class="reel-count">04 <span>/ 08</span></span>
           <span class="reel-vertical">THIMIRA THEEKSHANA / FILM &amp; EDIT</span>
-          <div class="reel-centre"><span class="reel-ring" aria-hidden="true">▶</span><span class="reel-watch-label">PLAY REEL</span></div>
+          
           <span class="reel-big-index" aria-hidden="true">04</span>
-          <button class="preview-reel" type="button" data-platform="instagram" data-url="https://www.instagram.com/reel/DXZM5qVCDuJ/" aria-label="Preview Instagram reel 04">Preview reel 04</button>
+          <button class="preview-reel" type="button" data-platform="instagram" data-url="https://www.instagram.com/reel/DXZM5qVCDuJ/" aria-label="Watch featured reel 04 on Instagram">Preview reel 04</button>
         </div>
         <div class="reel-details"><div><span class="reel-platform">INSTAGRAM / SELECTED CLIENT WORK</span><h3>Film &amp; Edit <span>— 04</span></h3><p>Filmed &amp; edited by Thimira Theekshana</p></div><a class="reel-external" href="https://www.instagram.com/reel/DXZM5qVCDuJ/" target="_blank" rel="noopener noreferrer" aria-label="Open project 04 on Instagram">↗</a></div>
       </article><article class="reel-card reel-card--facebook" aria-label="Film and editing project 05 on Facebook">
@@ -182,9 +178,9 @@ body.modal-open{overflow:hidden}
           <span class="reel-poster-overlay" aria-hidden="true"></span>
           <span class="reel-count">05 <span>/ 08</span></span>
           <span class="reel-vertical">THIMIRA THEEKSHANA / FILM &amp; EDIT</span>
-          <div class="reel-centre"><span class="reel-ring" aria-hidden="true">▶</span><span class="reel-watch-label">PLAY REEL</span></div>
+          
           <span class="reel-big-index" aria-hidden="true">05</span>
-          <button class="preview-reel" type="button" data-platform="facebook" data-url="https://www.facebook.com/reel/1102755102241203/" aria-label="Preview Facebook reel 05">Preview reel 05</button>
+          <button class="preview-reel" type="button" data-platform="facebook" data-url="https://www.facebook.com/reel/1102755102241203/" aria-label="Watch featured reel 05 on Facebook">Preview reel 05</button>
         </div>
         <div class="reel-details"><div><span class="reel-platform">FACEBOOK / SELECTED CLIENT WORK</span><h3>Film &amp; Edit <span>— 05</span></h3><p>Filmed &amp; edited by Thimira Theekshana</p></div><a class="reel-external" href="https://www.facebook.com/reel/1102755102241203/" target="_blank" rel="noopener noreferrer" aria-label="Open project 05 on Facebook">↗</a></div>
       </article><article class="reel-card reel-card--facebook" aria-label="Film and editing project 06 on Facebook">
@@ -193,9 +189,9 @@ body.modal-open{overflow:hidden}
           <span class="reel-poster-overlay" aria-hidden="true"></span>
           <span class="reel-count">06 <span>/ 08</span></span>
           <span class="reel-vertical">THIMIRA THEEKSHANA / FILM &amp; EDIT</span>
-          <div class="reel-centre"><span class="reel-ring" aria-hidden="true">▶</span><span class="reel-watch-label">PLAY REEL</span></div>
+          
           <span class="reel-big-index" aria-hidden="true">06</span>
-          <button class="preview-reel" type="button" data-platform="facebook" data-url="https://www.facebook.com/reel/28397141859966350/" aria-label="Preview Facebook reel 06">Preview reel 06</button>
+          <button class="preview-reel" type="button" data-platform="facebook" data-url="https://www.facebook.com/reel/28397141859966350/" aria-label="Watch featured reel 06 on Facebook">Preview reel 06</button>
         </div>
         <div class="reel-details"><div><span class="reel-platform">FACEBOOK / SELECTED CLIENT WORK</span><h3>Film &amp; Edit <span>— 06</span></h3><p>Filmed &amp; edited by Thimira Theekshana</p></div><a class="reel-external" href="https://www.facebook.com/reel/28397141859966350/" target="_blank" rel="noopener noreferrer" aria-label="Open project 06 on Facebook">↗</a></div>
       </article><article class="reel-card reel-card--facebook" aria-label="Film and editing project 07 on Facebook">
@@ -204,9 +200,9 @@ body.modal-open{overflow:hidden}
           <span class="reel-poster-overlay" aria-hidden="true"></span>
           <span class="reel-count">07 <span>/ 08</span></span>
           <span class="reel-vertical">THIMIRA THEEKSHANA / FILM &amp; EDIT</span>
-          <div class="reel-centre"><span class="reel-ring" aria-hidden="true">▶</span><span class="reel-watch-label">PLAY REEL</span></div>
+          
           <span class="reel-big-index" aria-hidden="true">07</span>
-          <button class="preview-reel" type="button" data-platform="facebook" data-url="https://www.facebook.com/reel/1012624795135854/" aria-label="Preview Facebook reel 07">Preview reel 07</button>
+          <button class="preview-reel" type="button" data-platform="facebook" data-url="https://www.facebook.com/reel/1012624795135854/" aria-label="Watch featured reel 07 on Facebook">Preview reel 07</button>
         </div>
         <div class="reel-details"><div><span class="reel-platform">FACEBOOK / SELECTED CLIENT WORK</span><h3>Film &amp; Edit <span>— 07</span></h3><p>Filmed &amp; edited by Thimira Theekshana</p></div><a class="reel-external" href="https://www.facebook.com/reel/1012624795135854/" target="_blank" rel="noopener noreferrer" aria-label="Open project 07 on Facebook">↗</a></div>
       </article><article class="reel-card reel-card--facebook" aria-label="Film and editing project 08 on Facebook">
@@ -215,9 +211,9 @@ body.modal-open{overflow:hidden}
           <span class="reel-poster-overlay" aria-hidden="true"></span>
           <span class="reel-count">08 <span>/ 08</span></span>
           <span class="reel-vertical">THIMIRA THEEKSHANA / FILM &amp; EDIT</span>
-          <div class="reel-centre"><span class="reel-ring" aria-hidden="true">▶</span><span class="reel-watch-label">PLAY REEL</span></div>
+          
           <span class="reel-big-index" aria-hidden="true">08</span>
-          <button class="preview-reel" type="button" data-platform="facebook" data-url="https://www.facebook.com/reel/2100807807479045/" aria-label="Preview Facebook reel 08">Preview reel 08</button>
+          <button class="preview-reel" type="button" data-platform="facebook" data-url="https://www.facebook.com/reel/2100807807479045/" aria-label="Watch featured reel 08 on Facebook">Preview reel 08</button>
         </div>
         <div class="reel-details"><div><span class="reel-platform">FACEBOOK / SELECTED CLIENT WORK</span><h3>Film &amp; Edit <span>— 08</span></h3><p>Filmed &amp; edited by Thimira Theekshana</p></div><a class="reel-external" href="https://www.facebook.com/reel/2100807807479045/" target="_blank" rel="noopener noreferrer" aria-label="Open project 08 on Facebook">↗</a></div>
       </article></div>
